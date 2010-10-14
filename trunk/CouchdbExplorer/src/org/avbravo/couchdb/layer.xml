@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+
+
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="org-avbravo-couchdb-DemoDBAction.instance">
+                <attr name="component" methodvalue="org.avbravo.couchdb.DemoDBTopComponent.findInstance"/>
+                <attr name="displayName" bundlevalue="org.avbravo.couchdb.Bundle#CTL_DemoDBAction"/>
+                <attr name="instanceCreate" methodvalue="org.openide.windows.TopComponent.openAction"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Databases">
+    <folder name="Explorer">
+        <folder name="Connection">
+            <folder name="Actions">
+             <file name="org-avbravo-couchdb-Explorar.instance">
+                <attr name="delegate" newvalue="org.avbravo.couchdb.Explorar"/>
+                <attr name="displayName" bundlevalue="org.avbravo.couchdb.Bundle#CTL_Explorer"/>
+                <attr name="iconBase" stringvalue="org/avbravo/couchdb/couchdb-icon-16px.png"/>
+                <attr name="instanceCreate" methodvalue="org.openide.awt.Actions.alwaysEnabled"/>
+                <attr name="noIconInMenu" boolvalue="false"/>
+            </file>
+            </folder>
+        </folder>
+    </folder>
+</folder>
+   
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="DemoDBAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/org-avbravo-couchdb-DemoDBAction.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="DemoDBTopComponent.settings" url="DemoDBTopComponentSettings.xml"/>
+        </folder>
+        <folder name="Modes">
+            <folder name="output">
+                <file name="DemoDBTopComponent.wstcref" url="DemoDBTopComponentWstcref.xml"/>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>
